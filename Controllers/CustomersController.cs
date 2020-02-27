@@ -11,7 +11,7 @@ namespace dotnet_ef_web_api_customers.Controllers
 {
     [ApiController]
     [Route("[customer]")]
-    public class CustomerCOntroller : ControllerBase
+    public class CustomerController : ControllerBase
     {
         private static List<Customer> Customers = new List<Customer>(){
             new Customer{Id=1, Full_name="Johny", Username="doe", Email="john@doe.com", Phone_number="0812345689"},
