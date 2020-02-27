@@ -45,7 +45,7 @@ namespace dotnet_ef_web_api_customers.Controllers
     [HttpPost]
     public IActionResult CustomerAdd(CustomersRequest customer)
     {
-        var customerAdd = new Customer() { Id= customer.Id , Full_name = customer.Full_name, Username = customer.Username, Email = customer.Email, Phone_number = customer.Phone_number, Created_at = customer.Created_at , Update_at = customer.Created_at };
+        var customerAdd = new Customer() { Id= customer.Id , Full_name = customer.Full_name, Username = customer.Username, Email = customer.Email, Phone_number = customer.Phone_number, Created_at = customer.Created_at , Update_at = customer.Update_at };
         Customers.Add(customerAdd);
         return Ok(new { data = Customers });
 
